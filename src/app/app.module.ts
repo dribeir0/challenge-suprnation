@@ -8,6 +8,7 @@ import { TaskBComponent } from './task-b/task-b.component';
 import { TaskCComponent } from './task-c/task-c.component';
 import { TaskDComponent } from './task-d/task-d.component';
 import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

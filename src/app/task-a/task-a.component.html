@@ -1,1 +1,11 @@
-<p>task-a works!</p>
+<div class="container d-flex flex-column justify-content-center mt-5">
+  <input type="text" [formControl]="control">
+
+  <ng-container *ngIf="isValid; else elseTemplate">
+    The expression is valid
+  </ng-container>
+  <ng-template #elseTemplate>
+    Invalid expression
+  </ng-template>
+
+</div>
