@@ -1,27 +1,19 @@
 # ChallengeSuprnation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+First off all you should run `npm run install` to install all the necessary packages
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+Run `ng start` or `npm run start` to run the project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+# Challenge Tasks
+I merged the task A , B and C because C needed the logic from A and B
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+For those tasks I tried to use a regex, but I'm not very use to, so I tried another approach that worked. Basically I used a function that tries to run a function an only can do it if that function was valid (check where for more details https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
-## Further help
+For task D I didn't try to do something pretty, just functional and responsive
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+If you have any doubt about something, please feel free to contact me
+
+Thank you
