@@ -1,0 +1,10 @@
+.calc-container {
+  height: calc(100vh - 58px);
+  .calculator {
+    margin: auto 20px 0;
+    .btn {
+      border: 1px solid black;
+    }
+  }
+
+}

@@ -1,1 +1,52 @@
-<p>task-d works!</p>
+<div class="calc-container d-flex flex-column">
+  <div style="height: 50px;">
+    <ng-container *ngIf="value || value === ''; else elseTemplate">
+      {{value}}
+    </ng-container>
+    <ng-template #elseTemplate>
+      Invalid Input
+    </ng-template>
+  </div>
+
+  <div class="calculator">
+    <div class="row">
+      <div class="col btn" (click)="insertNumber('tan')">tan</div>
+      <div class="col btn" (click)="insertNumber('sin')">sin</div>
+      <div class="col btn" (click)="insertNumber('cos')">cos</div>
+    </div>
+    <div class="row">
+      <div class="col btn" (click)="insertNumber('(')">(</div>
+      <div class="col btn" (click)="insertNumber(')')">)</div>
+      <div class="col btn" (click)="getRandomNumber()">RAND</div>
+      <div class="col btn" (click)="insertNumber('/')">/</div>
+    </div>
+    <div class="row">
+      <div class="col btn" (click)="insertNumber('7')">7</div>
+      <div class="col btn" (click)="insertNumber('8')">8</div>
+      <div class="col btn" (click)="insertNumber('9')">9</div>
+      <div class="col btn" (click)="insertNumber('*')">x</div>
+    </div>
+    <div class="row">
+      <div class="col btn" (click)="insertNumber('4')">4</div>
+      <div class="col btn" (click)="insertNumber('5')">5</div>
+      <div class="col btn" (click)="insertNumber('6')">6</div>
+      <div class="col btn" (click)="insertNumber('-')">-</div>
+    </div>
+    <div class="row">
+      <div class="col btn" (click)="insertNumber('1')">1</div>
+      <div class="col btn" (click)="insertNumber('2')">2</div>
+      <div class="col btn" (click)="insertNumber('3')">3</div>
+      <div class="col btn" (click)="insertNumber('+')">+</div>
+    </div>
+    <div class="row">
+      <div class="col btn" (click)="value = ''">C</div>
+      <div class="col btn" (click)="insertNumber('0')">0</div>
+      <div class="col btn" (click)="insertNumber('.')">.</div>
+      <div class="col btn" (click)="getResult()">=</div>
+    </div>
+  </div>
+
+
+
+
+</div>
