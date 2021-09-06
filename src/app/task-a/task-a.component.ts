@@ -13,13 +13,13 @@ export class TaskAComponent implements OnInit, OnDestroy {
 
   control = new FormControl();
   subscriptions = new Subscription();
-  isValid = false;
+  value = false;
 
   constructor(private appService: AppService, private cd: ChangeDetectorRef) { }
 
   ngOnInit(): void {
     this.subscriptions.add(this.control.valueChanges.pipe(debounceTime(200)).subscribe((exp) => {
-      this.isValid = this.appService.getValueFromExpression(exp) as boolean;
+      this.value = this.appService.getValueFromExpression(exp);
       this.cd.markForCheck();
     }));
   }
