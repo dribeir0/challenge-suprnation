@@ -12,6 +12,8 @@ I merged the task A , B and C because C needed the logic from A and B
 
 For those tasks I tried to use a regex, but I'm not very use to, so I tried another approach that worked. Basically I used a function that tries to run a function an only can do it if that function was valid (check where for more details https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
+(tried a regex like this /(?:[0-9-+*/^()x]|abs|e\^x|ln|log|a?(?:sin|cos|tan)h?)+/;)
+
 For task D I didn't try to do something pretty, just functional and responsive
 
 If you have any doubt about something, please feel free to contact me
